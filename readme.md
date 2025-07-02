@@ -1,8 +1,81 @@
 # 🧓 OECD Ageing‑Risk Workbench
 
-A dynamic and interactive Streamlit dashboard for visualizing and forecasting demographic and fiscal vulnerabilities among OECD countries — powered by World Bank data and ARIMA forecasting.
+An interactive Streamlit dashboard to visualize, compare, and forecast aging-related fiscal and demographic risks across OECD countries using World Bank data and ARIMA-based projections.
 
-![Dashboard Overview](https://user-images.githubusercontent.com/your-placeholder/preview.png)
+This tool is ideal for researchers, policy analysts, or anyone interested in understanding how population aging and fiscal indicators affect future vulnerability among advanced economies.
+
+---
+
+## 🔍 What Does the Dashboard Show?
+
+The app has five main screens — each answering a unique question about long-term demographic risk:
+
+---
+
+### 🗺️ **Map – OECD Vulnerability Overview**
+
+Shows the composite vulnerability score for all OECD countries on a world map. Darker shades indicate higher vulnerability based on ageing, healthcare, fiscal pressure, and economic trends.
+
+📍 Helps answer:  
+> “Which countries face the greatest risk in [snapshot year]?”
+
+![Vulnerability Map](snapshots/map.jpg)
+
+---
+
+### 📊 **Overview – Vulnerability vs Aging**
+
+Interactive bubble chart showing how countries score on:
+- % of population aged 65+
+- Composite risk score
+- Healthcare spending (bubble size)
+
+📍 Helps answer:  
+> “Which countries are both ageing and vulnerable?”
+
+![Overview](snapshots/overview.jpg)
+
+---
+
+### 🧮 **Decomposition – What Drives the Risk?**
+
+Stacked bar chart decomposing each country’s vulnerability into individual factor contributions — e.g., fertility, public debt, health spending, etc.
+
+📍 Helps answer:  
+> “What’s driving the vulnerability in each country?”
+
+![Decomposition](snapshots/decomposition.jpg)
+
+---
+
+### 🔍 **Drill-down – Country Deep-Dive**
+
+View a radar chart comparing one country’s scaled indicator scores against the OECD median.
+
+📍 Helps answer:  
+> “How does one country compare to the OECD average?”
+
+![Deep Dive](snapshots/deep-dive.jpg)
+
+---
+
+### 📈 **Evolution – Indicator Trends to 2050**
+
+Shows time series trends (historic + forecasted) for any indicator across selected countries using ARIMA forecasting.
+
+📍 Helps answer:  
+> “How are these trends projected to change?”
+
+![Evolution](snapshots/evolution.jpg)
+
+---
+
+## 💡 Customization Options
+
+- 📅 Choose projection horizon and snapshot year (up to 2050)
+- 🔢 Set ARIMA (p,d,q) parameters for forecasts
+- ⚖️ Adjust indicator weights or use presets (Balanced, Fiscal, Health)
+- 🌍 Filter countries for detailed analysis
 
 ---
 
